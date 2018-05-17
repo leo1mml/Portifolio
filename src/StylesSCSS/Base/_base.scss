@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html{
+    font-size: 62.5%;
+}
+
+html,body {
+    height: 100%;
+    min-height: 100%
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $m-size;
+}
+
+button{
+    cursor: pointer;
+}
+button:disabled{
+    cursor: default;
+}
+
+.is-active{
+    font-weight: bold;
+}

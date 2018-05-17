@@ -1,0 +1,56 @@
+.landing-container {
+    height: 100%;
+}
+.my-name_container {
+    margin-top: 10rem;
+}
+.my-name {
+    font-size: $xl-size;
+    font-weight: bolder;
+    color: $white-blue;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.habilities-container {
+    margin-top: $xxl-size;
+    text-align: left;
+    align-content: center;
+    height: 10rem;
+    width: 20rem;
+    margin: $xl-size auto auto auto;
+}
+
+.hability {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    // font-style: italic;
+    color: $white-blue;
+
+}
+
+.node {
+    color: green;
+}
+
+.react {
+    color: $normal-blue;
+}
+
+.watchos {
+    color: $watchOS;
+}
+
+.tvos {
+    color: $tvOS;
+}
+
+.macos {
+    color: $macOS;
+}
+
+.ios {
+    color: gray;
+}

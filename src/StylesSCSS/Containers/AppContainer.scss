@@ -1,0 +1,13 @@
+.app-container {
+    background: linear-gradient( $darker-blue-opaque, $darker-blue-opaque ), url('images/bg.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+// #root div {
+//     height: 100%;
+// }

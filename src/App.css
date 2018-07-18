@@ -22,7 +22,23 @@ button:disabled {
 .app-container {
   background: linear-gradient(rgba(33, 31, 48, 0.9), rgba(33, 31, 48, 0.9)), url("images/bg.jpg");
   background-size: cover;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+
+.app-container--can-overflow {
+  overflow: scroll; }
+
+.container-component-container {
+  display: flex;
+  flex: 1;
+  min-height: 0px;
+  /* IMPORTANT: you need this for non-chrome browsers */ }
+
+.overflow-container {
+  flex: 1;
+  overflow: auto; }
 
 #root {
   height: 100%; }
@@ -50,31 +66,11 @@ button:disabled {
   width: 20rem;
   margin: 4.8rem auto auto auto; }
 
-.hability {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: #E6F0EF; }
-
-.node {
-  color: green; }
-
-.react {
-  color: #217CA3; }
-
-.watchos {
-  color: #fa114f; }
-
-.tvos {
-  color: #E6F0EF; }
-
-.macos {
-  color: gray; }
-
-.ios {
-  color: gray; }
-
-.nav_container {
+.nav-container {
   padding-top: 2%; }
+
+.nav-container--dark {
+  background-color: rgba(33, 31, 48, 0.9); }
 
 .topnav {
   overflow: hidden;
@@ -99,7 +95,7 @@ button:disabled {
 .topnav a:hover {
   color: darkgray; }
 
-.nav_links {
+.nav-links {
   display: block;
   margin-right: 9.6rem; }
 
@@ -117,7 +113,7 @@ button:disabled {
   .topnav {
     display: block; }
 
-  .topnav .nav_links {
+  .topnav .nav-links {
     display: none; }
 
   .topnav a.icon {
@@ -127,7 +123,7 @@ button:disabled {
   .active {
     margin-left: 1.2rem; }
 
-  .nav_container {
+  .nav-container {
     padding-top: 0rem; } }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
@@ -146,5 +142,27 @@ button:disabled {
     float: none;
     display: block;
     text-align: left; } }
+.hability {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #E6F0EF; }
+
+.hability--nodejs {
+  color: green; }
+
+.hability--react {
+  color: #217CA3; }
+
+.hability--watchos {
+  color: #fa114f; }
+
+.hability--tvos {
+  color: #E6F0EF; }
+
+.hability--macos {
+  color: gray; }
+
+.hability--ios {
+  color: gray; }
 
 /*# sourceMappingURL=App.css.map */

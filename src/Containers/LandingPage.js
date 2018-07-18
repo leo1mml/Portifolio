@@ -1,5 +1,6 @@
 import React from 'react'
-import Typing from 'react-typing-animation';
+// import Typing from 'react-typing-animation';
+import TypingTitle from '../Components/TypingTitle'
 
 class LandingPage extends React.Component {
     state = {
@@ -15,23 +16,7 @@ class LandingPage extends React.Component {
                     <h1 className="my-name">Lima</h1>
                 </div>
                 <div className="habilities-container">
-                    <Typing loop={true} speed={100}>
-                        <span className="hability react">React</span>
-                        <Typing.Delay ms={1000} />
-                        <Typing.Backspace count={5} />
-                        <span className="hability node">nodeJS</span>
-                        <Typing.Delay ms={1000} />
-                        <Typing.Backspace count={7} />
-                        <span className="hability ios">iOS</span>
-                        <Typing.Delay ms={1000} />
-                        <Typing.Backspace count={3} />
-                        <span className="hability watchos">watchOS</span>
-                        <Typing.Delay ms={1000} />
-                        <Typing.Backspace count={7} />
-                        <span className="hability tvos">tvOS</span>
-                        <Typing.Delay ms={1000} />
-                        <Typing.Backspace count={4} />
-                    </Typing>
+                    <TypingTitle texts={["React", "nodeJS","iOS","macOS","watchOS"]}/>
                     <h1 className="hability">Developer</h1>
                 </div>
                 

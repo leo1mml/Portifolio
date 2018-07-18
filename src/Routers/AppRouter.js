@@ -10,10 +10,12 @@ export default () => (
         <header>
           <NavBar/>
         </header> 
-          <div>
-            <Switch>
-              <Route path="/" component={LandingPage} exact={true}/>
-            </Switch>
+          <div className="container-component-container">
+            <div className="overflow-container">
+              <Switch>
+                <Route path="/" component={LandingPage} exact={true}/>
+              </Switch>
+            </div>
           </div>
       </div>
     </BrowserRouter>

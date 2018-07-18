@@ -1,6 +1,9 @@
-.nav_container {
+.nav-container {
   padding-top: 2%;
-  // background-color: $darker-blue-opaque
+}
+
+.nav-container--dark {
+  background-color: $darker-blue-opaque;
 }
 
 .topnav {
@@ -32,7 +35,7 @@
     color: darkgray;
 }
 
-.nav_links {
+.nav-links {
   display: block;
   margin-right: $xxl-size;
 }
@@ -54,7 +57,7 @@
   .topnav {
     display: block;
   }
-  .topnav .nav_links {display: none;}
+  .topnav .nav-links {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -62,7 +65,7 @@
   .active {
     margin-left: $s-size;
   }
-  .nav_container {
+  .nav-container {
     padding-top: 0rem;
   }
 }
@@ -75,7 +78,9 @@
     right: 0;
     top: 0;
   }
-  .topnav.responsive div {display: block;}
+  .topnav.responsive div {
+    display: block;
+  }
   .topnav.responsive a {
     float: none;
     display: block;

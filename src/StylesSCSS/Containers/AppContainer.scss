@@ -2,12 +2,26 @@
     background: linear-gradient( $darker-blue-opaque, $darker-blue-opaque ), url('images/bg.jpg');
     background-size: cover;
     height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+.app-container--can-overflow {
+    overflow: scroll;
+}
+
+.container-component-container {
+    display: flex;
+    flex: 1;
+    min-height: 0px; /* IMPORTANT: you need this for non-chrome browsers */
+}
+
+.overflow-container {
+    flex: 1;
+    overflow: auto;
+  }
 
 #root {
     height: 100%;
 }
-
-// #root div {
-//     height: 100%;
-// }

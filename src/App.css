@@ -22,13 +22,10 @@ button:disabled {
 .app-container {
   background: linear-gradient(rgba(33, 31, 48, 0.9), rgba(33, 31, 48, 0.9)), url("images/bg.jpg");
   background-size: cover;
-  height: 100%;
+  min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column; }
-
-.app-container--can-overflow {
-  overflow: scroll; }
 
 .container-component-container {
   display: flex;
@@ -37,8 +34,7 @@ button:disabled {
   /* IMPORTANT: you need this for non-chrome browsers */ }
 
 .overflow-container {
-  flex: 1;
-  overflow: auto; }
+  flex: 1; }
 
 #root {
   height: 100%; }

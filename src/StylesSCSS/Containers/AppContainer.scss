@@ -1,14 +1,10 @@
 .app-container {
     background: linear-gradient( $darker-blue-opaque, $darker-blue-opaque ), url('images/bg.jpg');
     background-size: cover;
-    height: 100%;
+    min-height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-}
-
-.app-container--can-overflow {
-    overflow: scroll;
 }
 
 .container-component-container {
@@ -19,9 +15,13 @@
 
 .overflow-container {
     flex: 1;
-    overflow: auto;
+    // overflow: auto;
   }
 
 #root {
     height: 100%;
+}
+
+@media screen and (max-width: 600px){
+
 }

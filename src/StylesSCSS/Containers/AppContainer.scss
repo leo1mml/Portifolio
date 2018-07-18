@@ -1,10 +1,15 @@
 .app-container {
-    background: linear-gradient( $darker-blue-opaque, $darker-blue-opaque ), url('images/bg.jpg');
+    background: linear-gradient( $darker-blue-opaque, rgba(0,0,0,.9) ), url('images/bg.jpg');
     background-size: cover;
     min-height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.app-container--no-image {
+    background: $dark-blue;
+    background-image: none;
 }
 
 .container-component-container {
@@ -20,8 +25,4 @@
 
 #root {
     height: 100%;
-}
-
-@media screen and (max-width: 600px){
-
 }

@@ -24,9 +24,9 @@ class NavBar extends React.Component {
                 <div className="topnav" id="myTopnav">
                     <a href="#home" className="active"><img src={logo} className="logo" alt="logo"/></a>
                     <div className="nav-links">
-                        <a href="#news">About</a>
-                        <a href="#contact">Jobs</a>
-                        <a href="#about">Contact</a>
+                        <a href="#about">About</a>
+                        <a href="#jobs">Jobs</a>
+                        <a href="#contact">Contact</a>
                     </div>
                     <a className="icon" onClick={this.myFunction}>
                         <i className="fa fa-bars"></i>

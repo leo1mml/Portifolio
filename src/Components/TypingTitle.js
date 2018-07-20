@@ -44,7 +44,7 @@ class TypingTitle extends React.Component {
     render(){
         return (
             <div>
-                <p><span className={this.state.className}>{this.state.typerString}</span>_</p>
+                <p><span className={this.state.className}>{this.state.typerString}</span><span className="blinking-underline">_</span></p>
             </div>
         )
     }

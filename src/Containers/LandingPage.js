@@ -17,7 +17,7 @@ class LandingPage extends React.Component {
                 </div>
                 <div className="habilities-container">
                     <TypingTitle texts={["React", "nodeJS","iOS","macOS","watchOS"]}/>
-                    <h1 className="hability">Developer</h1>
+                    <h1 className="developer">Developer</h1>
                 </div>
                 
             </div>

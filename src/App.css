@@ -66,6 +66,10 @@ button:disabled {
   width: 20rem;
   margin: 4.8rem auto auto auto; }
 
+.developer {
+  color: #E6F0EF;
+  font-size: 2.5rem; }
+
 .nav-container {
   padding-top: 2%; }
 
@@ -144,7 +148,7 @@ button:disabled {
     text-align: left; } }
 .hability {
   font-size: 2.5rem;
-  font-weight: bolder;
+  font-weight: 300;
   color: #E6F0EF; }
 
 .hability--nodejs {

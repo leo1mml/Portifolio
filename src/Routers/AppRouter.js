@@ -7,16 +7,14 @@ export default () => (
   <div className="app-container">
     <BrowserRouter>
       <div>
-        <header>
-          <NavBar/>
-        </header> 
-          <div className="container-component-container">
-            <div className="overflow-container">
-              <Switch>
-                <Route path="/" component={LandingPage} exact={true}/>
-              </Switch>
-            </div>
+        <NavBar/>
+        <div className="container-component-container">
+          <div className="overflow-container">
+            <Switch>
+              <Route path="/" component={LandingPage} exact={true}/>
+            </Switch>
           </div>
+        </div>
       </div>
     </BrowserRouter>
   </div>

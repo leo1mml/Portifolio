@@ -1,9 +1,20 @@
 .landing-container {
     height: 100%;
+    transition: all 3s ease-in-out;
+    z-index: 1;
+    margin-top: 20%;
 }
+
+.landing-container--goaway{
+    // transform: translate(calc(-100%));
+    opacity: 0;
+}
+
+
 .my-name_container {
     margin-top: 10rem;
 }
+
 .my-name {
     font-size: $xl-size;
     font-weight: bolder;
@@ -26,4 +37,10 @@
 .developer {
     color: $white-blue;
     font-size: 2.5rem;
+}
+
+@media screen and (max-width:600px){
+    .landing-container{
+        margin-top: 40%;
+    }
 }

@@ -7,11 +7,6 @@
     flex-direction: column;
 }
 
-.app-container--no-image {
-    background: $dark-blue;
-    background-image: none;
-}
-
 .container-component-container {
     display: flex;
     flex: 1;
@@ -21,7 +16,7 @@
 .overflow-container {
     flex: 1;
     // overflow: auto;
-  }
+}
 
 #root {
     height: 100%;

@@ -7,10 +7,21 @@ class LandingPage extends React.Component {
 
     }
 
+    componentDidMount(){
+        requestAnimationFrame(() => {
+            document.getElementById("landing")
+        .classList.remove("landing-container--goaway");
+        })
+    }
+
+    goAway = () => {
+        document.getElementById("landing")
+        .classList.add("landing-container--goaway");
+    }
 
     render() {
         return (
-            <div className="landing-container">
+            <div id="landing" className="landing-container landing-container--goaway" onClick={this.goAway}>
                 <div className="my-name_container">
                     <h1 className="my-name">Leonel</h1>
                     <h1 className="my-name">Lima</h1>

@@ -10,9 +10,9 @@ class NavBar extends React.Component {
     myFunction = () => {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
-            x.className += " responsive";
+            x.classList.add("responsive")
         } else {
-            x.className = "topnav";
+            x.classList.remove("responsive")
         }
     }
 

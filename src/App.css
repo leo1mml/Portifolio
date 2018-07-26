@@ -134,7 +134,7 @@ button:disabled {
     flex-wrap: wrap;
     flex-basis: auto;
     flex-grow: 1;
-    transition: all 1s ease-out;
+    transition: all 0.3s ease-out;
     height: 60px; }
 
   .topnav .nav-links {
@@ -160,8 +160,7 @@ button:disabled {
   .topnav.responsive {
     position: relative;
     height: 250px;
-    background-color: #211F30;
-    transition: all 1s ease-out; }
+    background-color: #211F30; }
 
   .topnav.responsive a.icon {
     order: 1; }

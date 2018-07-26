@@ -69,7 +69,7 @@
     flex-wrap: wrap;
     flex-basis: auto;
     flex-grow: 1;
-    transition: all 1s ease-out;
+    transition: all 0.3s ease-out;
     height: 60px;
   }
   .topnav .nav-links {display: none;}
@@ -97,7 +97,6 @@
     position: relative;
     height: 250px;
     background-color: $darker-blue;
-    transition: all 1s ease-out;
   }
   .topnav.responsive a.icon {
     order: 1;

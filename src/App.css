@@ -138,7 +138,12 @@ button:disabled {
     height: 60px; }
 
   .topnav .nav-links {
-    display: none; }
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    padding-bottom: 20px; }
 
   .topnav a.icon {
     display: flex;
@@ -170,12 +175,11 @@ button:disabled {
     flex-direction: column;
     order: 3;
     flex-basis: 100%;
-    flex-grow: 0.1;
     flex-shrink: 0;
     padding-bottom: 20px;
     border-bottom: 2px solid #32384D; }
 
-  .topnav.responsive a {
+  .topnav a {
     display: flex;
     text-align: center;
     align-self: center; } }

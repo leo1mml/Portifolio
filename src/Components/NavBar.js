@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 class NavBar extends React.Component {
 
-    myFunction = () => {
+    toggleMenu = () => {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.classList.add("responsive")
@@ -22,11 +22,11 @@ class NavBar extends React.Component {
                 <div className="topnav" id="myTopnav">
                     <a href="/" className="active"><img src={logo} className="logo" alt="logo"/></a>
                     <div className="nav-links">
-                        <Link className="" to="/">About</Link>
-                        <Link className="" to="/">Jobs</Link>
-                        <Link className="" to="/">Contact</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/">About</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/">Jobs</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/">Contact</Link>
                     </div>
-                    <a className="icon" onClick={this.myFunction}>
+                    <a className="icon" onClick={this.toggleMenu}>
                         <i className="fa fa-bars"></i>
                     </a>
                 </div>

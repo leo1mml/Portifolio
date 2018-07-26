@@ -3,9 +3,6 @@ import React from 'react'
 import TypingTitle from '../Components/TypingTitle'
 
 class LandingPage extends React.Component {
-    state = {
-
-    }
 
     componentDidMount(){
         requestAnimationFrame(() => {

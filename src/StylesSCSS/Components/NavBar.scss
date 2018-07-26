@@ -75,6 +75,8 @@
     display: flex;
     flex-direction: row;
     flex-basis: 10%;
+    flex-shrink: 0;
+    flex-grow: 1;
     align-self: center;
     cursor: pointer;
     font-size: $l-size/1.5;

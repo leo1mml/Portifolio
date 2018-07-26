@@ -1,11 +1,9 @@
 import React from 'react'
 // import { connect } from 'react-redux';
 import logo from '../images/logo.png'
+import { Link } from 'react-router-dom'
 
 class NavBar extends React.Component {
-    state = {
-        isOnLandingPage: true
-    }
 
     myFunction = () => {
         var x = document.getElementById("myTopnav");
@@ -24,9 +22,9 @@ class NavBar extends React.Component {
                 <div className="topnav" id="myTopnav">
                     <a href="/" className="active"><img src={logo} className="logo" alt="logo"/></a>
                     <div className="nav-links">
-                        <a href="#about">About</a>
-                        <a href="#jobs">Jobs</a>
-                        <a href="#contact">Contact</a>
+                        <Link className="" to="/">About</Link>
+                        <Link className="" to="/">Jobs</Link>
+                        <Link className="" to="/">Contact</Link>
                     </div>
                     <a className="icon" onClick={this.myFunction}>
                         <i className="fa fa-bars"></i>

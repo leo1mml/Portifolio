@@ -1,9 +1,15 @@
+//base
 @import './Base/_settings.scss';
 @import './Base/_base.scss';
-@import './Containers/AppContainer.scss';
-@import './Containers/LandingPage.scss';
+
+//Components
 @import './Components/NavBar.scss';
 @import './Components/TypingTitle.scss';
+
+//Containers
+@import './Containers/AppContainer.scss';
+@import './Containers/LandingPage.scss';
+@import './Containers/AboutMe.scss';
 
 
 

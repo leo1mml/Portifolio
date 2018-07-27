@@ -3,6 +3,10 @@
     transition: all 3s ease-in-out;
     z-index: 1;
     margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .landing-container--goaway{
@@ -12,6 +16,7 @@
 
 
 .my-name_container {
+    flex-direction: column;
     margin-top: 10rem;
 }
 
@@ -32,6 +37,7 @@
     height: 10rem;
     width: 20rem;
     margin: $xl-size auto auto auto;
+    flex-direction: column;
 }
 
 .developer {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700,900i");
 html {
   font-size: 62.5%; }
 
@@ -19,67 +19,12 @@ button:disabled {
 .is-active {
   font-weight: bold; }
 
-.app-container {
-  background: linear-gradient(rgba(33, 31, 48, 0.9), rgba(0, 0, 0, 0.9)), url("images/bg.jpg");
-  background-size: cover;
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column; }
-
-.container-component-container {
-  display: flex;
-  flex: 1;
-  min-height: 0px;
-  /* IMPORTANT: you need this for non-chrome browsers */ }
-
-.overflow-container {
-  flex: 1; }
-
-#root {
-  height: 100%; }
-
-.landing-container {
-  height: 100%;
-  transition: all 3s ease-in-out;
-  z-index: 1;
-  margin-top: 20%; }
-
-.landing-container--goaway {
-  opacity: 0; }
-
-.my-name_container {
-  margin-top: 10rem; }
-
-.my-name {
-  font-size: 4.8rem;
-  font-weight: bolder;
-  color: #E6F0EF;
-  font-style: italic;
-  text-align: center;
-  margin-top: 0rem;
-  margin-bottom: 0rem; }
-
-.habilities-container {
-  margin-top: 9.6rem;
-  text-align: left;
-  align-content: center;
-  height: 10rem;
-  width: 20rem;
-  margin: 4.8rem auto auto auto; }
-
-.developer {
-  color: #E6F0EF;
-  font-size: 2.5rem; }
-
-@media screen and (max-width: 600px) {
-  .landing-container {
-    margin-top: 40%; } }
 .nav-container {
-  padding-top: 2%;
   position: fixed;
   display: flex;
-  width: 100%;
+  width: 930px;
+  margin-left: calc(50% - 465px);
+  padding-top: 50px;
   flex-direction: row;
   flex-grow: 1;
   flex-shrink: 1;
@@ -97,30 +42,30 @@ button:disabled {
   flex-basis: 100%; }
 
 .logo {
-  height: 3.2rem; }
+  height: 46px; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   display: flex;
   color: #E6F0EF;
   text-align: center;
+  align-self: center;
   margin: 1.6rem;
   text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 100; }
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 0; }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   color: darkgray; }
 
 .nav-links {
-  display: flex;
-  margin-right: 9.6rem; }
+  display: flex; }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
   color: white;
-  margin-left: 9.6rem;
   flex-basis: 30%; }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -129,6 +74,10 @@ button:disabled {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  .nav-container {
+    width: 100%;
+    margin-left: 0; }
+
   .topnav {
     display: flex;
     flex-wrap: wrap;
@@ -148,19 +97,19 @@ button:disabled {
   .topnav a.icon {
     display: flex;
     flex-direction: row;
-    flex-basis: 10%;
-    flex-shrink: 0;
-    flex-grow: 1;
+    margin-right: 40px;
     cursor: pointer;
-    margin-left: 30px;
     font-size: 2.1333333333rem; }
 
   .topnav a.active {
     margin-left: 3.2rem;
-    flex-basis: 65%; }
+    flex-basis: 50%; }
 
   .nav-container {
-    padding-top: 0rem; } }
+    padding-top: 0rem; }
+
+  .logo {
+    height: 3.2rem; } }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {
@@ -182,6 +131,7 @@ button:disabled {
 
   .topnav a {
     display: flex;
+    font-size: 1.6rem;
     text-align: center;
     align-self: center; } }
 .hability {
@@ -219,5 +169,107 @@ button:disabled {
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden; } }
+.app-container {
+  background: linear-gradient(rgba(33, 31, 48, 0.9), rgba(33, 31, 48, 0.9)), url("images/bg.jpg");
+  background-size: cover;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+
+.app-container div {
+  display: flex; }
+
+.container-component-container {
+  display: flex;
+  flex: 1;
+  min-height: 0px;
+  /* IMPORTANT: you need this for non-chrome browsers */ }
+
+.overflow-container {
+  display: flex;
+  flex: 1; }
+
+#root {
+  height: 100%; }
+
+.landing-container {
+  height: 100%;
+  transition: all 3s ease-in-out;
+  z-index: 1;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto; }
+
+.landing-container--goaway {
+  opacity: 0; }
+
+.my-name_container {
+  flex-direction: column;
+  margin-top: 10rem; }
+
+.my-name {
+  font-size: 4.8rem;
+  font-weight: bolder;
+  color: #E6F0EF;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+
+.habilities-container {
+  margin-top: 9.6rem;
+  text-align: left;
+  align-content: center;
+  height: 10rem;
+  width: 20rem;
+  margin: 4.8rem auto auto auto;
+  flex-direction: column; }
+
+.developer {
+  color: #E6F0EF;
+  font-size: 2.5rem; }
+
+@media screen and (max-width: 600px) {
+  .landing-container {
+    margin-top: 40%; } }
+.aboutme__container {
+  display: flex;
+  border: 1px solid #32384D;
+  margin-top: 158px;
+  margin-left: calc(50% - 40%);
+  font-size: 14px;
+  flex-direction: column;
+  flex-basis: 80%;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  color: #E6F0EF;
+  padding: 47px 60px;
+  box-sizing: border-box; }
+
+.aboutme__intro {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-grow: 1; }
+
+.aboutme__intro__photo {
+  height: 143px;
+  width: 143px;
+  background-image: url("images/me.JPG");
+  border-radius: 50%;
+  background-size: cover;
+  border: 3px solid #E29930;
+  flex-shrink: 0;
+  flex-grow: 0; }
+
+.aboutme__intro__description {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  text-align: center; }
 
 /*# sourceMappingURL=App.css.map */

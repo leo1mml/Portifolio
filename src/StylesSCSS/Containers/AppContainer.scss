@@ -1,10 +1,14 @@
 .app-container {
-    background: linear-gradient( $darker-blue-opaque, rgba(0,0,0,.9) ), url('images/bg.jpg');
+    background: linear-gradient( $darker-blue-opaque, $darker-blue-opaque ), url('images/bg.jpg');
     background-size: cover;
     min-height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.app-container div {
+    display: flex;
 }
 
 .container-component-container {
@@ -14,6 +18,7 @@
 }
 
 .overflow-container {
+    display: flex;
     flex: 1;
     // overflow: auto;
 }

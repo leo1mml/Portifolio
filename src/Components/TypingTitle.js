@@ -12,12 +12,10 @@ class TypingTitle extends React.Component {
     shouldType = true
 
     componentDidMount(){
-        console.log("montei");
         this.typeWriter();
     }
 
     componentWillUnmount(){
-        console.log("desmontei");
         this.shouldType = false
     }
 

@@ -5,14 +5,26 @@ class TypingTitle extends React.Component {
         speed: 150,
         typerString: "",
         stringNumber: 0,
-        className: "hability"
+        className: "hability",
     }
 
+    ///Once the component is unmounted we can't keep calling typer functions
+    shouldType = true
+
     componentDidMount(){
+        console.log("montei");
         this.typeWriter();
     }
 
+    componentWillUnmount(){
+        console.log("desmontei");
+        this.shouldType = false
+    }
+
     typeWriter = () => {
+        if(!this.shouldType){
+            return
+        }
         const txt = this.props.texts[this.state.stringNumber]
         if (this.state.typerString.length < txt.length) {
           this.setState((prevState, props) => {
@@ -28,6 +40,9 @@ class TypingTitle extends React.Component {
     }
 
     typeEraser = () => {
+        if(!this.shouldType){
+            return
+        }
         if(this.state.typerString.length > 0){
             this.setState((prevState, props) => {
                 return {typerString: prevState.typerString.slice(0,-1)}

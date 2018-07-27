@@ -20,9 +20,9 @@ class NavBar extends React.Component {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
                 <div className="topnav" id="myTopnav">
-                    <a href="/" className="active"><img src={logo} className="logo" alt="logo"/></a>
+                    <Link to="/" className="active"><img src={logo} className="logo" alt="logo"/></Link>
                     <div className="nav-links">
-                        <Link className="" onClick={this.toggleMenu} to="/">About</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/about">About</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">Jobs</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">Contact</Link>
                     </div>

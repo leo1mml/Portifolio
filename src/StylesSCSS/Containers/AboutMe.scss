@@ -40,6 +40,40 @@
     text-align: center;
 }
 
+.aboutme__skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme__skills__title{
+    text-align: center;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 70px;
+}
+
+.aboutme__skills__title:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 103px; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid $dark-yellow; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.aboutme__skills__skill-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 88%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: 36px;
+    justify-content: space-between;
+}
+
 
 @media screen and (max-width: 600px) {
     .aboutme__container{}

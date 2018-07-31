@@ -169,6 +169,40 @@ button:disabled {
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden; } }
+.skill__container {
+  display: flex;
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin-bottom: 36px; }
+
+.skill__bar {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: gray; }
+
+.skill__fill-bar {
+  display: flex;
+  flex-basis: 70%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #217CA3; }
+
+.skill__data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px; }
+
+.skill__data__name {
+  font-size: 14px;
+  font-weight: 600; }
+
+.skill__data__badassPercentage {
+  font-size: 14px;
+  font-weight: 300; }
+
 .app-container {
   background: linear-gradient(rgba(33, 31, 48, 0.9), rgba(33, 31, 48, 0.9)), url("images/bg.jpg");
   background-size: cover;
@@ -271,6 +305,42 @@ button:disabled {
   flex-direction: column;
   flex-shrink: 1;
   text-align: center; }
+
+.aboutme__skills {
+  display: flex;
+  flex-direction: column; }
+
+.aboutme__skills__title {
+  text-align: center;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+  margin-top: 70px; }
+
+.aboutme__skills__title:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 103px;
+  /* Change this to whatever width you want. */
+  padding-top: 0px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 2px solid #E29930;
+  /* This creates the border. Replace black with whatever color you want. */ }
+
+.aboutme__skills__skill-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 88%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-top: 36px;
+  justify-content: space-between; }
 
 @media screen and (max-width: 600px) {
   .aboutme__intro {

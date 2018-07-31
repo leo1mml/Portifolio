@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillBar from '../Components/SkillBar'
 
 class AboutMe extends React.Component {
 
@@ -30,10 +31,20 @@ class AboutMe extends React.Component {
                 </div>
                 <div className="aboutme__skills">
                     <div className="aboutme__skills__title">
-                        Skills
+                        Skills & Abilities
                     </div>
                     <div className="aboutme__skills__skill-list">
+                            <SkillBar skillName={"React"} badassPercentage={70}/>
+                            <SkillBar skillName={"WatchOS"} badassPercentage={70}/>
+                            <SkillBar skillName={"NodeJS"} badassPercentage={70}/>
+                        
+                            <SkillBar skillName={"iOS"} badassPercentage={70}/>
+                            <SkillBar skillName={"macOS"} badassPercentage={70}/>
+                            <SkillBar skillName={"Unity/C#"} badassPercentage={70}/>
 
+                            <SkillBar skillName={"tvOS"} badassPercentage={70}/>
+                            <SkillBar skillName={"Swift"} badassPercentage={70}/>
+                            <SkillBar skillName={"Java"} badassPercentage={70}/>
                     </div>
                 </div>
             </div>

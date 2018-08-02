@@ -1,7 +1,7 @@
 .aboutme__container{
     display: flex;
     border: 1px solid $dark-blue;
-    margin-top: 158px;
+    margin-top: 200px;
     margin-left: calc(50% - 40%);
     font-size: 14px;
     flex-direction: column;
@@ -10,7 +10,7 @@
     flex-grow: 0;
     flex-wrap: wrap;
     color: $white-blue;
-    padding: 47px 60px;
+    padding: 47px 60px 0px;
     box-sizing: border-box;
 }
 

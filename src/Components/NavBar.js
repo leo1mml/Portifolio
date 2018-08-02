@@ -5,6 +5,17 @@ import { Link } from 'react-router-dom'
 
 class NavBar extends React.Component {
 
+    componentDidMount(){
+        window.onscroll = function() {
+            if(window.pageYOffset > 50){
+                document.getElementsByClassName("nav-container")[0].style.top = "-200px";
+            }else {
+                document.getElementsByClassName("nav-container")[0].style.top = "0px";
+            }
+        }
+
+    }
+
     toggleMenu = () => {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {

@@ -28,7 +28,9 @@ button:disabled {
   flex-direction: row;
   flex-grow: 1;
   flex-shrink: 1;
-  z-index: 3; }
+  z-index: 3;
+  top: 0;
+  transition: top 0.6s; }
 
 .nav-container--dark {
   background-color: rgba(33, 31, 48, 0.9); }
@@ -229,7 +231,7 @@ button:disabled {
 
 .landing-container {
   height: 100%;
-  transition: all 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
   z-index: 1;
   margin-top: 20%;
   display: flex;
@@ -272,7 +274,7 @@ button:disabled {
 .aboutme__container {
   display: flex;
   border: 1px solid #32384D;
-  margin-top: 158px;
+  margin-top: 200px;
   margin-left: calc(50% - 40%);
   font-size: 14px;
   flex-direction: column;
@@ -281,7 +283,7 @@ button:disabled {
   flex-grow: 0;
   flex-wrap: wrap;
   color: #E6F0EF;
-  padding: 47px 60px;
+  padding: 47px 60px 0px;
   box-sizing: border-box; }
 
 .aboutme__intro {

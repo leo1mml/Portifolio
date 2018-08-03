@@ -292,7 +292,10 @@ button:disabled {
   flex: 1;
   min-height: 0px;
   /* IMPORTANT: you need this for non-chrome browsers */
-  max-width: 900px; }
+  flex-basis: 1200px;
+  flex-grow: 0;
+  flex-direction: column;
+  margin-left: calc(50% - 600px); }
 
 .overflow-container {
   display: flex;

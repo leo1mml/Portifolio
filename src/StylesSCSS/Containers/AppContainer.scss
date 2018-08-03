@@ -15,6 +15,7 @@
     display: flex;
     flex: 1;
     min-height: 0px; /* IMPORTANT: you need this for non-chrome browsers */
+    max-width: 900px;
 }
 
 .overflow-container {

@@ -9,14 +9,10 @@ export default () => (
     <BrowserRouter>
       <div>
         <NavBar/>
-        <div className="container-component-container">
-          <div className="overflow-container">
-            <Switch>
-              <Route path="/" component={LandingPage} exact={true}/>
-              <Route path="/about" component={AboutMe}/>
-            </Switch>
-          </div>
-        </div>
+          <Switch>
+            <Route path="/" component={LandingPage} exact={true}/>
+            <Route path="/about" component={AboutMe}/>
+          </Switch>
       </div>
     </BrowserRouter>
   </div>

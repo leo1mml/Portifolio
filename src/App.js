@@ -10,9 +10,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
+    window.addEventListener("load", () =>{
       this.setState({shouldRenderApp: true})
-    }, 2000);
+    })
   }
 
   render() {

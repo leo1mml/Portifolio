@@ -13,7 +13,7 @@ export default () => (
           <div className="overflow-container">
             <Switch>
               <Route path="/" component={LandingPage} exact={true}/>
-              <Route path="/about" component={AboutMe} exact={true}/>
+              <Route path="/about" component={AboutMe}/>
             </Switch>
           </div>
         </div>

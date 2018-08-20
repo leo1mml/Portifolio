@@ -431,6 +431,7 @@ button:disabled {
     padding: 0 5%; }
 
   .aboutme__intro__photo {
+    margin-right: 0;
     align-self: center; }
 
   .aboutme__intro__description {

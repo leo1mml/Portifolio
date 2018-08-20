@@ -6,6 +6,10 @@ class SkillBar extends React.Component {
         basis : 0
     }
 
+    componentWillUnmount(){
+        clearInterval(this.fillBar)
+    }
+
 
     growFillBar = () => {
         const fillBar = document.getElementById(this.props.skillName)
@@ -20,7 +24,7 @@ class SkillBar extends React.Component {
     }
 
 
-    fillBar = setInterval(this.growFillBar, 15)
+    fillBar = setInterval(this.growFillBar, this.props.badassPercentage * .3)
     
 
     render(){

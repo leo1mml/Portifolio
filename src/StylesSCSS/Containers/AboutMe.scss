@@ -75,10 +75,23 @@
 
 @media screen and (max-width: 600px) {
     .aboutme__container{
+        margin: 0;
         margin-top: 100px;
+        padding: 0;
+        align-content: center;
+        flex-basis: 95%;
+        margin-left: 2.5%;
     }
     .aboutme__intro{
         flex-direction: column;
-        border: 1px solid red;
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
+    .aboutme__intro__photo{
+        align-self: center;
+    }
+
+    .aboutme__intro__description{
+        text-align: center;
     }
 }

@@ -35,7 +35,7 @@ class NavBar extends React.Component {
                     <div className="nav-links">
                         <Link className="" onClick={this.toggleMenu} to="/about">About</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">Jobs</Link>
-                        <Link className="" onClick={this.toggleMenu} to="/">Contact</Link>
+                        <a href="mailto:leo94mml@gmail.com" target="_top">Contact</a>
                     </div>
                     <a className="icon" onClick={this.toggleMenu}>
                         <i className="fa fa-bars"></i>

@@ -312,9 +312,7 @@ button:disabled {
   position: relative;
   top: 200px;
   flex-basis: 300px;
-  margin-left: calc(50% - 150px); }
-
-.landing-container--goaway {
+  margin-left: calc(50% - 150px);
   opacity: 0; }
 
 .my-name_container {

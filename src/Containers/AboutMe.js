@@ -33,17 +33,16 @@ class AboutMe extends React.Component {
                         Skills & Abilities
                     </div>
                     <div className="aboutme__skills__skill-list">
-                            <SkillBar skillName={"React"} badassPercentage={70}/>
-                            <SkillBar skillName={"WatchOS"} badassPercentage={70}/>
-                            <SkillBar skillName={"NodeJS"} badassPercentage={70}/>
+                            <SkillBar skillName={"React"} badassPercentage={80}/>
+                            <SkillBar skillName={"WatchOS"} badassPercentage={80}/>
+                            <SkillBar skillName={"NodeJS"} badassPercentage={95}/>
                         
-                            <SkillBar skillName={"iOS"} badassPercentage={70}/>
-                            <SkillBar skillName={"macOS"} badassPercentage={70}/>
-                            <SkillBar skillName={"Unity/C#"} badassPercentage={70}/>
+                            <SkillBar skillName={"iOS"} badassPercentage={95}/>
+                            <SkillBar skillName={"macOS"} badassPercentage={80}/>
+                            <SkillBar skillName={"Unity/C#"} badassPercentage={75}/>
 
-                            <SkillBar skillName={"tvOS"} badassPercentage={70}/>
-                            <SkillBar skillName={"Swift"} badassPercentage={70}/>
-                            <SkillBar skillName={"Java"} badassPercentage={70}/>
+                            <SkillBar skillName={"tvOS"} badassPercentage={82}/>
+                            <SkillBar skillName={"Swift"} badassPercentage={95}/>
                     </div>
                 </div>
             </div>

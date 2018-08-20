@@ -18,7 +18,7 @@ class LandingPage extends React.Component {
 
     render() {
         return (
-            <div id="landing" className="landing-container landing-container--goaway" onClick={this.goAway}>
+            <div id="landing" className="landing-container landing-container--goaway">
                 <div className="my-name_container">
                     <h1 className="my-name">Leonel</h1>
                     <h1 className="my-name">Lima</h1>

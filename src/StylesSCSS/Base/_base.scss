@@ -2,7 +2,8 @@
 
 html{
     font-size: 62.5%;
-    background-color: $darker-blue;
+    background: linear-gradient( $darker-blue-opaque, $darker-blue-opaque ), url('images/bg.jpg');
+    background-size: cover;
 }
 
 html,body {

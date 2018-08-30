@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700,900i");
 html {
   font-size: 62.5%;
-  background-color: #211F30; }
+  background: linear-gradient(rgba(33, 31, 48, 0.9), rgba(33, 31, 48, 0.9)), url("images/bg.jpg");
+  background-size: cover; }
 
 html, body {
   height: 100%;
@@ -277,8 +278,6 @@ button:disabled {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1); } }
 .app-container {
-  background: linear-gradient(rgba(33, 31, 48, 0.9), rgba(33, 31, 48, 0.9)), url("images/bg.jpg");
-  background-size: cover;
   min-height: 100%;
   overflow: hidden;
   display: flex;
